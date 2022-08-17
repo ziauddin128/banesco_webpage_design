@@ -1,0 +1,1430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+/*---- topHeader -------*/
+.topHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.topHeader ul li 
+{
+    display: inline-block;
+    margin: 0 10px;
+}
+.topHeader ul li a 
+{
+    color: gray;
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.menu1
+{
+    border-bottom: 2px solid #1c8464;
+    transition-duration: 0.1s;
+}
+.menu2
+{
+    border-bottom: 2px solid #1c8464;
+    transition-duration: 0.1s;
+}
+.menu3
+{
+    border-bottom: 2px solid #1c8464;
+    transition-duration: 0.1s;
+}
+
+
+.topHeader img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.languageDiv
+{
+    position: relative;
+   
+}
+.languageFlag
+{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    padding: 20px 10px 5px;
+    width: 100px;
+    border: 1px solid #ccc;
+    display: none;
+    background-color:  #cccccca8;
+    z-index: 3;
+}
+
+.languageFlag.active
+{
+  display: block;
+}
+
+.languageFlag ul
+{
+    padding: 0;
+}
+.languageFlag ul li 
+{
+    margin: 10px 0;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.languageFlag ul li img 
+{
+    margin-right: 8px;
+    padding: 2px;
+}
+/*---- /topHeader -------*/
+
+/*------- logoSection --------*/
+.logoSection
+{
+    padding: 15px 40px;
+    background-color: #fafafa;
+}
+.logo
+{
+    width: 100px;
+}
+.navbar-nav li 
+{
+    margin: 0 15px;
+}
+.searchBox
+{
+    height: 42px;
+    width: 250px;
+    border: 1px solid #556176;
+    border-radius:6px;
+    padding: 0 10px;
+}
+.searchBox input 
+{
+    height: 100%;
+    width: 85%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 2px 6px;
+}
+.searchBox i 
+{
+    font-size: 20px;
+}
+
+.navbar-nav li a 
+{
+    font-size: 18px;
+}
+.navbar-nav li a:hover 
+{
+    color: #007654 !important;
+}
+.navbar-nav li a i 
+{
+    font-size: 20px;
+}
+.dropdown-menu li 
+{
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+}
+.dropdown-menu li:nth-child(4)
+{
+    border-bottom: none; 
+}
+.dropdown-menu li a 
+{
+    font-size: 16px;
+    color: #556176;
+}
+.dropdown-menu li a i 
+{
+    margin-right: 4px;
+}
+.dropdown-item:hover
+{
+    background-color: transparent !important;
+}
+/*------- /logoSection --------*/
+
+/*------ banner --------*/
+.banner
+{
+    height: 60vh;
+}
+.banner .owl-carousel .item 
+{
+    position: relative;
+}
+.banner .owl-carousel .item img 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bannerText
+{
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding: 20px;
+
+}
+.bannerText h3 
+{
+    font-size: 20px;
+    color: #007654;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.bannerText h6{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #556176  ;
+}
+.bannerText a 
+{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 20px;
+    background-color: #007654;
+    border-radius: 4px;
+    color: white !important;
+}
+.bannerText p 
+{
+    margin-top: 20px;
+    font-size: 15px;
+    color: #556176 ;
+    font-weight: 500;
+}
+.bannerText p a 
+{
+    background-color: transparent !important;
+    border-radius: none;
+    color: blue !important;
+    padding: 0px;
+}
+.banner .owl-prev
+{
+    position: absolute;
+    bottom: 40%;
+    transform: translateY(-50%);
+    left: 20px;
+    background-color: #dadada !important;
+    width: 50px;
+    height: 50px;
+    
+}
+.banner .owl-prev span 
+{
+    font-size: 40px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    color: #6e7788 !important;
+}
+.banner .owl-next
+{
+    position: absolute;
+    bottom: 40%;
+    transform: translateY(-50%);
+    right: 20px;
+    background-color: #dadada !important;
+    width: 50px;
+    height: 50px;
+    
+}
+.banner .owl-next span 
+{
+    font-size: 40px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+    color: #6e7788 !important;
+}
+/*------ /banner --------*/
+
+/*-------- promotion ----------*/
+.promotion
+{
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    flex-wrap: wrap;
+}
+.promotionEmpresas
+{
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    flex-wrap: wrap;
+}
+.promotion div
+{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.promotionEmpresas div 
+{
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.promotion div img 
+{
+    width: 50px;
+}
+
+.promotionEmpresas div img 
+{
+    width: 50px;
+}
+
+.promotion div p 
+{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.promotionEmpresas div p 
+{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.pointSale,.newsale
+{
+    position: relative;
+}
+.pointSale:hover .pointSaletext,.newsale:hover .newSaletext
+{
+    display: block;
+} 
+.pointSaletext
+{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: -80px;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: none;
+    z-index: 3;
+}
+
+.newSaletext
+{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: -270px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: none;
+    z-index: 3;
+    width: 200px;
+}
+.newSaletext3 
+{
+    bottom: -300px;
+}
+
+
+.pointSaletext ul ,.newSaletext ul
+{
+    padding: 10px 0;
+}
+.pointSaletext ul li
+{
+    list-style: none;
+    margin: 10px 0;
+    color: #1975d1;
+    font-size: 18px;
+}
+
+.newSaletext ul li 
+{
+    list-style: none;
+    margin: 30px 0;
+    color: #1975d1;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.newSaletext ul li:last-child
+{
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+/*-------- /promotion ----------*/
+
+/*------- slider ---------*/
+.slider
+{
+    padding: 40px 0;
+}
+.slider .owl-carousel .item 
+{
+    height: 270px;
+    position: relative;
+    
+}
+.slider .owl-carousel .item img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.sliderText
+{
+    height: 95px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 14px 20px;
+}
+.sliderText h5 
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: white;
+}
+.sliderText p 
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+/*------- /slider ---------*/
+
+/*------ service -----*/
+.service
+{
+    padding: 50px 0;
+}
+.serviceBox
+{
+    margin: 20px 0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    background-color: white;
+}
+.serviceBox img 
+{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+.serviceBoxText
+{
+    padding: 40px 20px;
+}
+.serviceBoxText h6 
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1359aa;
+}
+.serviceBoxText p 
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+.serviceBoxText a 
+{
+    float: right;
+    font-size: 17px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #1359aa !important;
+}
+/*------ /service -----*/
+
+/*------ banner2 --------*/
+.banner2
+{  
+    margin-top: 100px;
+    padding: 40px 0;
+    background-color: #13599e;
+}
+.banner2Left,.banner2Right
+{
+    margin: 15px;
+}
+.banner2Left img
+{
+    width: 100%;
+    margin-top: -150px;
+}
+.banner2Right 
+{
+    color: white;
+}
+.banner2Right h2 
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.banner2Right p 
+{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.banner2Right a 
+{
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffc107;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+/*------ /banner2 --------*/
+
+/*------ banner last --------*/
+.grayBackground
+{
+    background-color: hsla(0, 5%, 93%, 0.659);
+}
+.bannerLast
+{  
+    margin-top: 150px;
+    padding: 40px 0 60px;
+    background-color: #fff;
+}
+.bannerLastLeft,.bannerLastRight
+{
+    margin: 15px;
+}
+.bannerLastLeft img
+{
+    width: 100%;
+    margin-top: -150px;
+}
+.bannerLastRight 
+{
+    color: black;
+}
+.bannerLastRight h2 
+{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #13599e;
+}
+.bannerLastRight p 
+{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.bannerLastRight a 
+{
+    float: right;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #13599e;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+/*------ /banner last --------*/
+
+/*----- footer -------*/
+.footer
+{
+    padding: 50px 0;
+}
+.footerTop
+{
+    padding: 30px 30px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.socialIcon ul li
+{
+   display: inline-block;
+   margin: 0 7px;
+}
+.socialIcon ul li a 
+{
+    font-size: 25px;
+    color: #1c8464 !important;
+    cursor: pointer;
+}
+.footerMedium
+{
+    margin: 10px 0;
+}
+.footerMediumBox
+{
+    margin: 10px 0;
+}
+.footerMediumBox h5 
+{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footerMediumBox ul 
+{
+    padding: 0;
+    list-style: none;
+}
+.footerMediumBox ul li 
+{
+    margin: 6px 0;
+}
+.footerMediumBox ul li a 
+{
+    font-size: 17px;
+    font-weight: 600;
+    color: #13599e;
+    text-decoration: none;
+}
+.footerBottom
+{
+    margin-top: 20px;
+}
+.footerBottom p 
+{
+    font-size: 14px;
+    color: #556176;
+}
+.footerBottomLast
+{
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerLeft img
+{
+    width: 140px;
+}
+.footerRight,.footerLeft
+{
+    margin: 5px 0;
+}
+.footerRight img 
+{
+   
+    margin: 0 5px;
+}
+/*----- /footer -------*/
+
+
+/*----- goTop ------------*/
+.goTop
+{
+    z-index: 4;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #ccc;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+.goTop a i
+{
+    font-size: 20px;
+    color: #556176;
+}
+/*----- /goTop ------------*/
+
+
+/*--------- servetcontroller page css ------*/
+
+.servletMain
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../media/banner/new-backgroundweb.jpg");
+    background-size: cover;
+    background-position: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.servletMainDiv
+{
+    border-radius: 10px;
+    display: flex;
+    flex-basis: 50%;
+    padding: 30px;
+    width: 50%;
+    position: absolute;
+    top:15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.servletMainLeft
+{
+    padding: 40px 20px 20px 40px;
+    background-color: #007953;
+    width: 50%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.servletMainLeft h5 
+{
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.servletMainLeft span 
+{
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.servletMainLeft p 
+{
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.servletMainRight
+{
+    background-color: white;
+    padding: 30px 25px;
+    width: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.servletMainRightForm h6
+{ 
+   font-size: 19px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #ccc;
+   margin-bottom: 15px;
+}
+
+.servletRadio
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+.servletRadio
+{
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.servletMainRightForm .input-group
+{
+    height: 45px;
+    margin: 10px 0;
+}
+
+.servletMainRightForm .input-group input
+{
+    outline: none;
+    box-shadow: none;
+}
+
+.btnDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btnDiv button 
+{
+    border: none;
+    background-color: #007953;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+}
+.formLinkBottom a 
+{
+    font-size: 13px;
+    color: gray !important;
+    text-decoration: none;
+}
+.formLinkBottom a:hover 
+{
+    text-decoration: underline;
+}
+.conclusion
+{
+    font-size: 13px;
+    color: gray ;
+}
+
+.servetTop
+{ 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: white;
+}
+.servetTopRight ul li
+{ 
+  display: inline-flex;
+  margin: 0 15px;
+}
+.servetTopRight ul li a 
+{
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.servetTopRight ul li a:hover 
+{
+    text-decoration: underline;
+}
+.servetTopRightNumber
+{
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+.servetTopRightNumber a 
+{
+    text-decoration: none !important; 
+}
+.info
+{
+    font-size: 12px;
+    width: 90%;
+    margin-left: 10%;
+    line-height: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.info i 
+{
+    background-color: orange;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    color: white;
+}
+/*--------- /servetcontroller page css ------*/
+
+/*------ responsive --------*/
+
+@media(max-width:339px)
+{   
+
+    .servletMainLeft {
+        display: none;
+    }
+    .servetTop 
+    {
+        display: none;
+    }
+
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        width: 100%;
+        position: absolute;
+        top:15%;
+    }
+
+
+    .servletMainRight {
+        padding: 30px 25px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 11px;
+    }
+
+
+    .searchBox {
+        margin: 10px 0;
+    }
+    .topHeader 
+    {
+      padding: 15px 5px;
+    }
+    .topHeader ul li {
+        margin: 0 4px;
+    }
+    .topHeader ul li a {
+        font-size: 10px;
+    }
+    .topHeader img {
+        width: 18px;
+        margin-bottom: 10px;
+    }
+    .topHeader i 
+    {
+        display: none;
+    }
+    .promotion
+    {
+        grid-template-columns: auto auto;
+    }
+    .pointSaletext
+    {
+        display: none !important;
+    }
+    .newSaletext
+    {
+        display: none !important;
+    }
+    .promotion i 
+    {
+        display: none;
+    }
+    .banner .owl-carousel .item img {
+        display: none;
+    }
+    .bannerText {
+        width: 100%;
+        background-color: white;
+         position: initial; 
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        padding: 30px 20px 10px;
+    }
+    .banner {
+        height: 45vh;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    .banner2Right h2 {
+        font-size: 24px;
+    }
+    .banner2Right p {
+        font-size: 15px;
+    }
+    .footerMediumBox {
+        margin: 25px 0;
+    }
+    .footerTop {
+         padding: 0px; 
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .socialIcon ul li {
+        margin: 0 2px;
+    }
+    .socialIcon ul li a {
+        font-size: 20px;
+    }
+    .navbar-nav
+    {
+        margin: 20px 0;
+    }
+    .searchBox {
+        width: 200px;
+        border-radius: 6px;
+    }
+}
+
+
+@media(min-width:340px) and (max-width:599px)
+{   
+    
+    .servletRadio {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .servletRadio span
+    {
+        margin-right: 15px;
+    }
+
+    .servletMainLeft {
+        display: none;
+    }
+    .servetTop 
+    {
+        display: none;
+    }
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        position: absolute;
+        top:15%;
+        width: 80%;
+    }
+
+    .servletMainRight {
+        padding: 30px 25px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 11px;
+    }
+
+    .searchBox {
+        margin: 10px 0;
+    }
+    .topHeader 
+    {
+      padding: 15px 5px;
+    }
+    .topHeader ul li {
+        margin: 0 4px;
+    }
+    .topHeader ul li a {
+        font-size: 12px;
+    }
+    .topHeader img {
+        width: 18px;
+        margin-bottom: 10px;
+    }
+    .topHeader i 
+    {
+        display: none;
+    }
+    .promotion
+    {
+        grid-template-columns: auto auto;
+    }
+    .pointSaletext
+    {
+        display: none !important;
+    }
+    .newSaletext
+    {
+        display: none !important;
+    }
+    .promotion i 
+    {
+        display: none;
+    }
+    .banner .owl-carousel .item img {
+        display: none;
+    }
+    .bannerText {
+        width: 100%;
+        background-color: white;
+         position: initial; 
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        padding: 30px 20px 10px;
+    }
+    .banner {
+        height: 45vh;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    .banner2Right h2 {
+        font-size: 24px;
+    }
+    .banner2Right p {
+        font-size: 15px;
+    }
+    .footerMediumBox {
+        margin: 25px 0;
+    }
+    .footerTop {
+         padding: 0px; 
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .socialIcon ul li {
+        margin: 0 2px;
+    }
+    .socialIcon ul li a {
+        font-size: 20px;
+    }
+    .navbar-nav
+    {
+        margin: 20px 0;
+    }
+    .searchBox {
+        width: 220px;
+        border-radius: 6px;
+    }
+}
+
+
+@media(min-width:600px) and (max-width:767px)
+{   
+    .servletRadio {
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .servletRadio span
+    {
+        margin-right: 15px;
+    }
+
+    .servletMainLeft {
+        display: none;
+    }
+    .servetTop 
+    {
+        display: none;
+    }
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        position: absolute;
+        top:15%;
+        width: 60%;
+    }
+
+    .servletMainRight {
+        padding: 30px 25px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 11px;
+    }
+
+    .searchBox {
+        margin: 10px 0;
+    }
+    .topHeader 
+    {
+      padding: 15px 5px;
+    }
+    .topHeader ul li {
+        margin: 0 4px;
+    }
+    .topHeader ul li a {
+        font-size: 14px;
+    }
+    .topHeader img {
+        width: 18px;
+        margin-bottom: 10px;
+    }
+    .topHeader i 
+    {
+        display: none;
+    }
+    .promotion
+    {
+        grid-template-columns: auto auto;
+    }
+    .pointSaletext
+    {
+        display: none !important;
+    }
+    .newSaletext
+    {
+        display: none !important;
+    }
+    .promotion i 
+    {
+        display: none;
+    }
+    .banner .owl-carousel .item img {
+        display: none;
+    }
+    .bannerText {
+        width: 100%;
+        background-color: white;
+         position: initial; 
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+        padding: 30px 20px 10px;
+    }
+    .banner {
+        height: 45vh;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    .banner2Right h2 {
+        font-size: 24px;
+    }
+    .banner2Right p {
+        font-size: 15px;
+    }
+    .footerMediumBox {
+        margin: 25px 0;
+    }
+    .footerTop {
+         padding: 0px; 
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .socialIcon ul li {
+        margin: 0 2px;
+    }
+    .socialIcon ul li a {
+        font-size: 20px;
+    }
+    .navbar-nav
+    {
+        margin: 20px 0;
+    }
+    .searchBox {
+        width: 220px;
+        border-radius: 6px;
+    }
+}
+
+
+@media(min-width:768px) and (max-width:991px)
+{
+   
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        position: absolute;
+        top:15%;
+        width: 80%;
+    }
+    .servletMainLeft h5 {
+        font-size: 17px;
+    }
+    .servletMainLeft span {
+        font-size: 14px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 10px;
+    }
+    .conclusion {
+        font-size: 11px;
+    }
+   
+    .banner {
+        height: 40vh;
+    }
+    .bannerText {
+        width: 240px;
+        right: 40px;
+        padding: 10px;
+    }
+    .bannerText h3 {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+    .bannerText h6 {
+        font-size: 14px;
+        margin-top: 21px;
+        margin-bottom: 15px;
+    }
+    .bannerText a {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .bannerText p {
+        margin-top: 14px;
+        font-size: 12px;
+    }
+    .promotion {
+        grid-template-columns: auto auto auto ;
+    }
+    .footerMediumBox h5 {
+        font-size: 15px;
+    }
+    .footerMediumBox ul li a {
+        font-size: 13px;
+    }
+    .searchBox {
+        margin: 10px 0;
+    }
+}
+
+@media(min-width:992px) and (max-width:1024px)
+{
+
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        position: absolute;
+        top:15%;
+        width: 60%;
+    }
+    .servletMainLeft h5 {
+        font-size: 17px;
+    }
+    .servletMainLeft span {
+        font-size: 14px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 12px;
+    }
+    .conclusion {
+        font-size: 12px;
+    }
+  
+    .banner {
+        height: 40vh;
+    }
+    .bannerText {
+        width: 240px;
+        right: 40px;
+        padding: 10px;
+    }
+    .bannerText h3 {
+        font-size: 16px;
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+    .bannerText h6 {
+        font-size: 14px;
+        margin-top: 21px;
+        margin-bottom: 15px;
+    }
+    .bannerText a {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+    .bannerText p {
+        margin-top: 14px;
+        font-size: 12px;
+    }
+    .promotion {
+        grid-template-columns: auto auto auto ;
+    }
+    .footerMediumBox h5 {
+        font-size: 15px;
+    }
+    .footerMediumBox ul li a {
+        font-size: 13px;
+    }
+    .searchBox {
+        margin: 10px 0;
+    }
+}
+
+@media(min-width:1025px) and (max-width:1440px)
+{
+    .servletMainDiv
+    {
+        border-radius: 10px;
+        display: flex;
+        flex-basis: 50%;
+        padding: 10px;
+        position: absolute;
+        top:15%;
+        width: 60%;
+    }
+    .servletMainLeft h5 {
+        font-size: 17px;
+    }
+    .servletMainLeft span {
+        font-size: 14px;
+    }
+    .servletRadio {
+        font-size: 12px;
+    }
+    .formLinkBottom a {
+        font-size: 12px;
+    }
+    .conclusion {
+        font-size: 12px;
+    }
+   
+}
